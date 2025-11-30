@@ -67,7 +67,7 @@ function fadeFooter() {
 
 window.addEventListener("scroll", fadeFooter);
 
-// Inicialmente oculto
+
 footer.style.opacity = 0;
 footer.style.transform = "translateY(50px)";
 

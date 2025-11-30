@@ -1,14 +1,12 @@
 body {
   margin: 0;
     font-family: Arial, Helvetica, sans-serif;
-    background: linear-gradient(180deg, hwb(224 3% 77%) 0%, #0f172a 50%, hsl(224, 95%, 26%) 100%);
+    background: linear-gradient(180deg, hwb(224 3% 77%) 0%, hsl(222, 47%, 21%) 50%, hsl(224, 95%, 26%) 100%);
     color: #EFFFFF;
     background-size: 1000% 1000%;
 }
 
-/* ===== BANNER (USA TU DEGRADADO ORIGINAL MÁS VIVO) ===== */
 #banner {
-    /* ocupa todo el alto de la pantalla para el hero */
     min-height: 100vh;
     display: flex;
     align-items: center;
@@ -32,10 +30,6 @@ body {
     font-size: medium;
 }
 
-/* Contenedor del banner un poco más separado pero no tanto */
-
-
-/* Tarjeta sobre mí con fondo azul muy oscuro y borde suave */
 #sobremibody {
     background: rgba(15, 23, 42, 0.85);
     border-radius: 32px;
@@ -43,15 +37,30 @@ body {
     box-shadow: 0 18px 45px rgba(15, 23, 42, 0.8);
 }
 
-/* Recuadro de la foto tipo tarjeta moderna */
+#icono{
+    width: 60px;
+    max-width: 100%;
+    background: radial-gradient(circle at top, #38bdf8 0%, hsl(229, 40%, 39%) 100%);
+    border-radius: 25px;
+    padding: 5px;
+    border: 2px solid #22d3ee;
+    display: inline-block;
+}
+#icono:hover{
+    transform: scale(1.20);
+    transition: transform 0.3s ease;}
 #foto {
-    width: 400px;
+    width: 350px;
     max-width: 100%;
     display: inline-block;
     border-radius: 40px;
     border: 2px solid #22d3ee;
     background: radial-gradient(circle at top, #38bdf8 0%, hsl(229, 40%, 39%) 100%);
     padding: 16px;
+}
+#foto:hover{
+    transform: rotate(2deg);
+    transition: transform 0.3s ease;
 }
 
 /* Botón suave sobre el fondo azul */
@@ -74,7 +83,7 @@ body {
     font-weight: lighter;
     font-size:medium;
     backdrop-filter: blur(6px);
-    background-color: #38bdf8;
+    background-color: hsl(198, 67%, 38%);
 }
 
 .btn-degradado2:hover {
@@ -94,8 +103,11 @@ body {
     border: 2px solid #20D3D1;
     height: auto;
 }
+#carta:hover {
+    transform: scale(1.10);
+    transition: transform 0.3s ease;
+}
 
-/* Barra superior transparente con blur */
 #barra {
     position: fixed;
     top: 0;
@@ -243,3 +255,46 @@ section.fade-in {
 #contacto .card {
   border-radius: 24px;
 }
+
+input[aria-invalid="true"] {
+  border-color: var(--danger) !important;
+  box-shadow: 0 0 0 4px rgba(239, 91, 91, .18);
+  background: #0c111c;
+}
+
+input[data-valid="true"] {
+  border-color: var(--accent) !important;
+  box-shadow: 0 0 0 4px rgba(91, 141, 239, .18);
+  background: #0c111c;
+}
+
+.error-msg {
+  margin-top: 6px;
+  padding: 8px 10px;
+  font-size: .9rem;
+  color: #ffd3d3;
+  background: rgba(239,91,91,.12);
+  border-left: 4px solid var(--danger);
+  border-radius: 8px;
+}
+
+#status {
+  margin-top: 1rem;
+  text-align: center;
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: #f8f9fa;             
+}
+
+/* Éxito */
+#status.ok {
+  color: #00e676;             
+}
+
+/* Error */
+#status.error {
+  color: #ff6b6b;              
+}
+
+
+

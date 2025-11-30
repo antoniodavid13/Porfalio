@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="../Imagenes/logo.png"/>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     <link rel="stylesheet" href="../CSS/estilos.css">
@@ -19,7 +20,7 @@
         <div class="container-fluid text-center w-100 justify-content-center align-items-center"> 
             <div class="row justify-content-center align-items-center">
                 <div class ="col-sm-12 col-md-5 fs-lighter fs-5 text-start">
-                    <h1 class="display-5 fw-bold">Hola, <span class="texto">Soy Antonio David</span></h1>
+                    <h1 class="display-5 fw-bold">Hola, <span class="texto">soy Antonio David</span></h1>
                     <h2 class="fs-5 fw-bold mt-3">Desarrollador <span class="texto">Full Stack</span></h2>
                     <p id="eslogan"class="fst-italic fw-lighter"></p>
                                             <div id="botones">
@@ -29,13 +30,13 @@
                                 </a>
                             </button>
                             <button class="btn btn-degradado">
-                                <a href="https://github.com/antoniodavid13" class="d-flex align-items-center text-decoration-none">
+                                <a href="https://www.linkedin.com/in/antonio-david-fern%C3%A1ndez-de-gomar-9a8212331/" class="d-flex align-items-center text-decoration-none">
                                     <img src="../Imagenes/linkedin.png"/>
                                     
                                 </a>
                             </button>
                             <button class="btn btn-degradado">
-                                <a href="https://github.com/antoniodavid13" class="d-flex align-items-center text-decoration-none">
+                                <a href="../PDF/CV_Antonio_David.pdf" class="d-flex align-items-center text-decoration-none">
                                     <img src="../Imagenes/cv.png"/>
                                 </a>
                             </button>
@@ -83,7 +84,7 @@
         </div>
     </div>
 </section>
-<section>
+<section id="habilidades">
     <div class="container">
         <div  class="card text-light pt-2 pb-2 bg-transparent border-0 container">
 
@@ -91,13 +92,13 @@
             <div class="row align-items-center justify-content-center">
 
                 <div class="col-sm-12 col-md-9 fs-lighter fs-5  me-2">
-                    <h3 class="text-start justify-content-start fs-3 fw-bold pb-2 ">
-                    Habil<span class="texto">idades</span>
+                          <h2 class="text-start pb-4 display-6 fw-bold ">
+                        Habili<span class="texto">dades</span>
+                        </h2>
                     </h3>
                     <p>
-                       A lo largo de mi formación he adquirido conocimientos en el desarrollo de aplicaciones web y multiplataforma, +
-                       utilizando tecnologías como HTML5, CSS3, Bootstrap 5, Tailwind CSS, JavaScript, React, Vite, Java, Python, PHP,
-                        Kotlin y Spring, lo que me permite abordar proyectos de manera integral y actualizada.
+                        Formado en desarrollo web y multiplataforma, trabajando con HTML5, CSS3 (Bootstrap, Tailwind), 
+                        JavaScript/React y Vite, además de lenguajes como Java, Python, PHP, Kotlin y Spring.
                     </p>
 
                 </div>
@@ -106,7 +107,7 @@
             </div>
             <div class="row align-items-center justify-content-center gap-5">
 
-                <div class="col-sm-12 col-md-3 fs-lighter pt-4">
+                <div id="carta" class="col-sm-12 col-md-3 fs-lighter pt-4">
                     <div id="Frontend"class="card text-light  w-100 h-100">
                         <div class="card-header border-bottom-0 justify-content-center text-center">
                             <h4 class="justify-content-start fs-3 fw-bold pb-2">Frontend</h4>
@@ -122,7 +123,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-sm-12 col-md-3 fs-lighter pt-4">
+                <div id="carta" class="col-sm-12 col-md-3 fs-lighter pt-4">
                     <div id="Frontend"class="card text-light  w-100 h-100 pt-1 pb-1">
                         <div class="card-header border-bottom-0 justify-content-center text-center">
                             <h4 class="justify-content-start fs-3 fw-bold pb-2">Backend</h4>
@@ -138,7 +139,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-sm-12 col-md-3 fs-lighter pt-4">
+                <div id="carta" class="col-sm-12 col-md-3 fs-lighter pt-4">
                     <div id="Frontend"class="card text-light  w-100 h-100">
                         <div class="card-header border-bottom-0 justify-content-center text-center">
                             <h4 class="justify-content-start fs-3 fw-bold pb-2">Herramientas</h4>
@@ -163,10 +164,10 @@
         </div>
     </div>
     </section>
-    <section>
-        <div class="container mt-5 pt-5">
+    <section id="experiencia">
+        <div class="container mt-5 pt-5" >
             <div class="card text-light p-3 bg-transparent border-0 mt-5">
-            <div class="card-header border-bottom-0 bg-transparent">
+            <div class="card-header border-bottom-0 bg-transparent" >
                 <h2 class="text-center justify-content-center display-6 fw-bold ">
                 Expe<span class="texto">riencia</span>
                 </h2>
@@ -209,33 +210,44 @@
             </div>
         </div>
     </section>
-    <section>
+    <section id="proyecto">
         <div class="container mt-5">
-            <div class="card text-light p-3 bg-transparent border-0 mt-5">
+            <div class="card text-light p-3 bg-transparent border-0 mt-5 ">
                 <div class="card-header border-bottom-0 bg-transparent">
                     <h2 class="text-center justify-content-center display-6 fw-bold ">
                     Proyec<span class="texto">tos</span>
                     </h2>
                 </div>
-                <div class="card-body w-80 mt-3">
-                    <div class="row justify-content-center align-items-center gap-5">
-                        <div class="col-sm-12 col-md-3 text-center text-dark ">
-                            <div id="proyectos"class="card">
+                <div class="card-body w-80 mt-3  ">
+                    <div class="row justify-content-center align-items-stretch gap-5">
+                        <div class="col-sm-12 col-md-3 text-center text-dark h-100 ">
+                            <div id="proyectos"class="card h-100 d-flex flex-column">
                                 <div class="card-header border-bottom-0 justify-content-center text-center">
                                     <img src="../Imagenes/piedra-papel-tijeras.png" class="card-img-top" alt="Proyecto 1">
                                 </div> 
                                 <div class="card-body">
-                                    <h5 class="card-title text-light fw-bold"> Juego de Piedra Papel Tijeras</h5>
+                                    <h5 class="card-title text-light fw-bold">Piedra Papel Tijeras</h5>
                                 </div>
                                 <div class="card-footer border-top-0 d-flex justify-content-center gap-2">
                                     <img src="../Imagenes/java.png" alt="Java">
                                     <img src="../Imagenes/netbeans.png" alt="NetBeans">
+                                    <img src="../Imagenes/git.png" alt="Git">
+                                    <img src="../Imagenes/git2.png" alt="GitHub">
 
+                                </div>
+                                <div class="mt-4 text-center d-flex justify-content-center gap-3 mb-2">
+                                    <button class="btn btn-degradado2 px-4">
+                                        <a href="../Imagenes/piedra-papel-tijeras.png" class="text-decoration-none text-light"> Imagen</a>
+                                    </button>
+
+                                    <button  class="btn btn-degradado2 px-4">
+                                        <a href="https://github.com/antoniodavid13/Piedra-Papel-Tijeras" class="text-decoration-none text-light"> Enlace</a>
+                                    </button>
                                 </div>
                             </div>
                         </div>
-                        <div  class="col-sm-12 col-md-3 text-center mb-2">
-                            <div id="proyectos" class="card">
+                        <div  class="col-sm-12 col-md-3 text-center mb-2 h-100">
+                            <div id="proyectos" class="card h-100 d-flex flex-column">
                                 <div class="card-header border-bottom-0 justify-content-center text-center">
                                     <img src="../Imagenes/camilo.png" class="card-img-top" alt="Proyecto 1">
                                 </div> 
@@ -253,26 +265,40 @@
 
 
                                 </div>
+                                <div class="mt-4 text-center d-flex justify-content-center gap-3 mb-2">
+                                    <button class="btn btn-degradado2 px-4">Imagen</button>
+
+                                    <button  class="btn btn-degradado2 px-4">
+                                    Enlace
+                                    </button>
+                                </div>
                             </div>
                         </div>
-                        <div  class="col-sm-12 col-md-3 text-center mb-2">
-                            <div id="proyectos" class="card">
+                        <div  class="col-sm-12 col-md-3 text-center mb-2 h-100">
+                            <div id="proyectos" class="card h-100 d-flex flex-column">
                                 <div class="card-header border-bottom-0 justify-content-center text-center">
                                     <img src="../Imagenes/automatizacion.png" class="card-img-top" alt="Proyecto 1">
                                 </div> 
                                 <div class="card-body">
-                                    <h5 class="card-title text-light fw-bold">Web APP </h5>
+                                    <h5 class="card-title text-light fw-bold">Chat bot N8N/Telegram </h5>
                                 </div>
                                 <div class="card-footer border-top-0 d-flex justify-content-center flex-wrap gap-1">
-                                    <img src="../Imagenes/vite.png" alt="Vite">
-                                    <img src="../Imagenes/visual.png" alt="Visual Studio">
-                                    <img src="../Imagenes/react.png" alt="React">
-                                    <img src="../Imagenes/html5.png" alt="HTML5">
-                                    <img src="../Imagenes/css.png" alt="CSS">
-                                    <img src="../Imagenes/js.png" alt="JavaScript">
+                                    <img src="../Imagenes/n8n.png" alt="n8n">
+                                    <img src="../Imagenes/cal.png" alt="cal.com">
+                                    <img src="../Imagenes/robot.png" alt="robot">
+                                    <img src="../Imagenes/gmail.png" alt="gmail">
+                                    <img src="../Imagenes/telegram.png" alt="telegram">
+                                    <img src="../Imagenes/geminis.png" alt="geminis">
 
 
 
+                                </div>
+                                 <div class="mt-4 text-center d-flex justify-content-center gap-3 mb-2">
+                                    <button class="btn btn-degradado2 px-4">Imagen</button>
+
+                                    <button  class="btn btn-degradado2 px-4">
+                                    Enlace
+                                    </button>
                                 </div>
                             </div>
                         </div>
@@ -281,7 +307,7 @@
             </div>
         </div>
     </section>
-        <section>
+        <section id="contacto" class="mt-5 pt-5">
         <div class="container mt-5 mb-5">
              <div class="card text-light p-4 bg-transparent border-0 mt-5">
                     <div class="card-header border-bottom-0 bg-transparent text-center">
@@ -294,34 +320,39 @@
                     </div>
 
                 <div class="card-body mx-auto">
-                    <form>
                     <div class="row g-3">
                         <div class="col-md-6">
+                        <form id="form-inscripcion">
                         <label for="nombre" class="form-label fw-semibold">Nombre</label>
-                        <input type="text" class="form-control bg-white text-black border-secondary" id="nombre" placeholder="Tu nombre">
+                        <input type="text" class="form-control bg-white text-black border-secondary" id="nombre" name="user-name" placeholder="*Tu nombre">
                         </div>
                         <div class="col-md-6">
                         <label for="email" class="form-label fw-semibold">Email</label>
-                        <input type="email" class="form-control bg-white text-black border-secondary" id="email" placeholder="tunombre@correo.com">
+                        <input type="email" class="form-control bg-white text-black border-secondary" id="correo" name="user-email" placeholder="*tunombre@correo.com">
                         </div>
                     </div>
 
                     <div class="mt-3">
                         <label for="asunto" class="form-label fw-semibold">Asunto</label>
-                        <input type="text" class="form-control bg-white text-black border-secondary" id="asunto" placeholder="Motivo del mensaje">
+                        <input type="text" class="form-control bg-white text-black border-secondary" id="asunto" name="subject" placeholder="*Asunto del mensaje">
                     </div>
 
                     <div class="mt-3">
                         <label for="mensaje" class="form-label fw-semibold">Mensaje</label>
-                        <textarea class="form-control bg-white text-black border-secondary" id="mensaje" rows="4" placeholder="Cuéntame sobre tu idea o proyecto"></textarea>
+                        <textarea class="form-control bg-white text-black border-secondary" id="mensaje" name="message"rows="4" placeholder="*Cuéntame sobre tu idea o proyecto"></textarea>
                     </div>
 
-                    <div class="mt-4 text-center">
-                        <button type="submit" class="btn btn-degradado2 px-4">
+                    <div class="mt-4 text-center gap-4 d-flex justify-content-center">
+                        <button type="reset" class="btn btn-degradado2 px-5">Limpiar
+                            
+                        </button>
+
+                        <button type="submit" class="btn btn-degradado2 px-5">
                         Enviar mensaje
                         </button>
                     </div>
                     </form>
+                    <p id="status"></p>
                 </div>
 
                 </div>
@@ -336,9 +367,20 @@
     
 </main>
 
+
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+<!-- Tu JS de EmailJS -->
+<script src="../js/email.js"></script>
+
+<!-- El resto de tus scripts -->
 <script src="../js/archivo.js"></script>
 <script src="../js/index.js"></script>
 <script src="../js/includes.js"></script>
+<script src="../js/validacion.js"></script>
+
+<link href="https://cdn.jsdelivr.net/npm/@n8n/chat/dist/style.css" rel="stylesheet" />
+<script type="module" src="../js/chat.js"></script>
+
 
 </body>
-</html>
+</html> 

@@ -1,4 +1,3 @@
-// Cargador genérico de fragmentos HTML con caché y fallback
 const cache = new Map();
 
 async function loadFragment(url) {
@@ -42,3 +41,8 @@ if (document.readyState === "loading") {
 } else {
   hydrateIncludes();
 }
+
+
+
+
+
