@@ -1,11 +1,11 @@
-const p='"Encargado de plasmar las ideas ficticias en una realidad"';
+const p='“Especialista en el desarrollo integral de aplicaciones móviles, web y de escritorio, abarcando desde el diseño conceptual y modelado E/R hasta la construcción de arquitecturas backend robustas y escalables.”';
 let i=0;
 
     function escribir() {
       if (i < p.length) {
         document.getElementById("eslogan").innerHTML += p.charAt(i);
         i++;
-        setTimeout(escribir, 50); 
+        setTimeout(escribir, 15); 
       }
     }
     window.onload=escribir;

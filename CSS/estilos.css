@@ -1,189 +1,215 @@
-
 body {
-  height: 100vh;
   margin: 0;
-  background: linear-gradient(270deg, hsl(201, 81%, 10%), lab(11.69% 9.71 -29.65));
-  background-size: 600% 600%;
-  animation: moverGradiente 10s ease infinite;
-  font-family: Arial, Helvetica, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(180deg, hwb(224 3% 77%) 0%, #0f172a 50%, hsl(224, 95%, 26%) 100%);
+    color: #EFFFFF;
+    background-size: 1000% 1000%;
 }
+
+/* ===== BANNER (USA TU DEGRADADO ORIGINAL MÁS VIVO) ===== */
+#banner {
+    /* ocupa todo el alto de la pantalla para el hero */
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background: linear-gradient(135deg, #020617 0%, hwb(222 4% 73%) 40%, #1d4ed8 100%);
+    background-size: 200% 200%;
+    animation: moverGradiente 12s ease-in-out infinite;
+}
+
 @keyframes moverGradiente {
-  0% { background-position: 0% 50%; }
-  50% { background-position: 100% 50%; }
-  100% { background-position: 0% 50%; }
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
 }
 
-.texto{
-  color: hsl(179, 93%, 48%);
-}
-#eslogan{
-  font-size:medium;
-
+.texto {
+    color: #22d3ee;
+    text-align: justify;
 }
 
-#banner{
-  margin-bottom: 400px;
-}
-#sobremibody{
-  background-color: rgba(0, 0, 0, 0.1);
-  border-radius: 64px;
-}
-#foto{
-  width: 300px;   /* ancho fijo */
-  height: 200px;  /* alto fijo */
-  color:hsl(179, 93%, 48%);
-  border:1px solid;
-  height: auto;
-  display: inline-block;
-  border-radius: 50px;
-  
+#eslogan {
+    font-size: medium;
 }
 
+/* Contenedor del banner un poco más separado pero no tanto */
 
+
+/* Tarjeta sobre mí con fondo azul muy oscuro y borde suave */
+#sobremibody {
+    background: rgba(15, 23, 42, 0.85);
+    border-radius: 32px;
+    border: 1px solid rgba(34, 211, 238, 0.3);
+    box-shadow: 0 18px 45px rgba(15, 23, 42, 0.8);
+}
+
+/* Recuadro de la foto tipo tarjeta moderna */
+#foto {
+    width: 400px;
+    max-width: 100%;
+    display: inline-block;
+    border-radius: 40px;
+    border: 2px solid #22d3ee;
+    background: radial-gradient(circle at top, #38bdf8 0%, hsl(229, 40%, 39%) 100%);
+    padding: 16px;
+}
+
+/* Botón suave sobre el fondo azul */
 .btn-degradado {
-  color: lch(100% 0.01 296.81);
-  margin-right: 10px;
-  border-radius: 64px;
-  font-weight: lighter;
-  font-size: smaller;
-  background-color: rgb(222, 222, 222,0.50);
-
+    color: white;
+    border-radius: 64px;
+    font-weight: lighter;
+    font-size: smaller;
+    backdrop-filter: blur(6px);
 }
 
 .btn-degradado:hover {
-  background: transparent;
-  color:white
-
+    background: transparent;
+    color: #e0faff;
+    border-color: #22d3ee;
 }
 
-.botones{
-  justify-content: space-between;
-  display: flex;
+.btn-degradado2 {
+    color: white;
+    font-weight: lighter;
+    font-size:medium;
+    backdrop-filter: blur(6px);
+    background-color: #38bdf8;
 }
-#Frontend{
-  color: white;
-  border: 1px solid;
-  background: hsl(0, 0%, 0%,0.50);
-  height: auto;
-  border: 2px solid  #20D3D1;
+
+.btn-degradado2:hover {
+    background: transparent;
+    color: #e0faff;
+    border-color: #22d3ee;
 }
+
+.botones {
+    justify-content: space-between;
+    display: flex;
+}
+
+#Frontend {
+    color: white;
+    background: rgba(15, 23, 42, 0.85);
+    border: 2px solid #20D3D1;
+    height: auto;
+}
+
+/* Barra superior transparente con blur */
 #barra {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  padding: 10px 0;
-  z-index: 9999;
-  background: transparent;      /* más elegante */
-  backdrop-filter: blur(12px);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px 0;
+    z-index: 9999;
+    background: rgba(15, 23, 42, 0.45);
+    backdrop-filter: blur(14px);
 }
 
 /* Ajustar los enlaces */
 #barra .nav-link {
-  color: #EFFFFF;
-  font-size: 1rem;
-  padding: 8px 16px;
-  transition: 0.3s ease;
+    color: #EFFFFF;
+    font-size: 1rem;
+    padding: 8px 16px;
+    transition: 0.3s ease;
 }
 
 /* Hover elegante */
 #barra .nav-link:hover {
-  color: #20D3D1;
-  transform: translateY(-2px);
+    color: #20D3D1;
+    transform: translateY(-2px);
 }
+
+/* Timeline */
 .timeline {
     position: relative;
     padding-left: 4rem;
     margin: 0 0 0 30px;
     color: white;
-
-    &:before {
-        content: '';
-        position: absolute;
-        left: 0;
-        top: 0;
-        width: 4px;
-        height: 100%;
-        background: #ffffff;
-    }
-
-    .timeline-container {
-        position: relative;
-        margin-bottom: 2.5rem;;
-        border: 2px solid #20D3D1;
-
-        .timeline-icon {
-            position: absolute;
-            left: -88px;
-            top: 4px;
-            width: 50px;
-            height: 50px;
-            border-radius: 50%;
-            text-align: center;
-            font-size: 2rem;
-            background: #ffffff;
-
-            i {
-                position: absolute;
-                left: 50%;
-                top: 50%;
-                transform: translate(-50%, -50%);
-            }
-
-            img {
-                width: 100%;
-                height: 100%;
-                border-radius: 50%;
-            }
-        }
-
-        .timeline-body {
-            background: hsl(0, 0%, 0%,0.50);
-            border-radius: 3px;
-            padding: 20px 20px 15px;
-            box-shadow: 1px 3px 9px rgba(0,0,0,0.5);
-
-            &:before {
-                content: '';
-                background: inherit;
-                width: 20px;
-                height: 20px;
-                display: block;
-                position: absolute;
-                left: -10px;
-                transform: rotate(45deg);
-                border-radius: 0 0 0 2px;
-            }
-
-
-            .timeline-subtitle {
-                font-weight: 300;
-                font-style: italic;
-                opacity: .4;
-                margin-top: 16px;
-                font-size: 11px;
-                color: white;
-            }
-        }
-
-        &.primary {
-            .badge,
-            .timeline-icon {
-                background: #20D3D1 !important;
-            }
-        }
-
-
-
-
-
-    }
-}
-div#proyectos{
-  border: 2px solid #20D3D1;
-  background: hsl(0, 0%, 0%,0.50);
 }
 
+.timeline:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 4px;
+    height: 100%;
+    background: #ffffff;
+}
+
+.timeline .timeline-container {
+    position: relative;
+    margin-bottom: 2.5rem;
+    border: 2px solid #22d3ee;
+}
+
+.timeline .timeline-container .timeline-icon {
+    position: absolute;
+    left: -88px;
+    top: 4px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 2rem;
+    background: #ffffff;
+}
+
+.timeline .timeline-container .timeline-icon i {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.timeline .timeline-container .timeline-icon img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.timeline .timeline-container .timeline-body {
+    background: rgba(15, 23, 42, 0.9);
+    border-radius: 12px;
+    padding: 20px 20px 15px;
+    box-shadow: 1px 3px 18px rgba(15, 23, 42, 0.9);
+}
+
+.timeline .timeline-container .timeline-body:before {
+    content: '';
+    background: inherit;
+    width: 20px;
+    height: 20px;
+    display: block;
+    position: absolute;
+    left: -10px;
+    transform: rotate(45deg);
+    border-radius: 0 0 0 2px;
+}
+
+.timeline .timeline-container .timeline-body .timeline-subtitle {
+    font-weight: 300;
+    font-style: italic;
+    opacity: .6;
+    margin-top: 16px;
+    font-size: 11px;
+    color: #e5f9ff;
+}
+
+.timeline .timeline-container.primary .badge,
+.timeline .timeline-container.primary .timeline-icon {
+    background: #22d3ee !important;
+}
+
+/* Proyectos */
+div#proyectos {
+    border: 2px solid #20D3D1;
+    background: rgba(15, 23, 42, 0.9);
+}
+
+/* Animación secciones */
 section {
     opacity: 0;
     transform: translateY(50px);
@@ -195,16 +221,25 @@ section.fade-in {
     transform: translateY(0);
 }
 
-
+/* Footer */
 .footer-simple {
-  background-color: transparent; /* fondo transparente */
-  color: #fff;            /* texto blanco */
-  text-align: center;     /* centrado */
-  padding: 1rem 0;        /* espacio arriba y abajo */
-  font-size: 0.9rem;      /* tamaño de texto discreto */
-  margin-top: 2rem;       /* separacion del contenido */
+    background-color: transparent;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    font-size: 0.9rem;
+    margin-top: 2rem;
+}
+#contacto .form-control {
+  border-radius: 12px;
+  box-shadow: 0 0 0 1px rgba(34, 211, 238, 0.15);
 }
 
+#contacto .form-control:focus {
+  border-color: #22d3ee;
+  box-shadow: 0 0 0 2px rgba(34, 211, 238, 0.4);
+}
 
-
-
+#contacto .card {
+  border-radius: 24px;
+}
