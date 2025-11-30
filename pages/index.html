@@ -3,18 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/png" href="../Imagenes/logo.png"/>
+    <link rel="icon" type="image/png" href="/Imagenes/logo.png"/>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-    <link rel="stylesheet" href="../CSS/estilos.css">
+    <link rel="stylesheet" href="/CSS/estilos.css">
 
     <title>Mi Portfolios</title>
 </head>
 <body>
-<header>
- <div data-include="../components/header.html"></div>
 
+<header>
+ <div data-include="/components/header.html"></div>
 </header>
+
 <main id="inicio" class="align-items-center justify-content-center vh-100 text-white ">
     <section id="banner"> 
         <div class="container-fluid text-center w-100 justify-content-center align-items-center"> 
@@ -23,28 +24,29 @@
                     <h1 class="display-5 fw-bold">Hola, <span class="texto">soy Antonio David</span></h1>
                     <h2 class="fs-5 fw-bold mt-3">Desarrollador <span class="texto">Full Stack</span></h2>
                     <p id="eslogan"class="fst-italic fw-lighter"></p>
-                                            <div id="botones">
-                            <button class="btn btn-degradado">
-                                <a href="https://github.com/antoniodavid13" class="d-flex align-items-center text-decoration-none">
-                                    <img src="../Imagenes/git.png" />
-                                </a>
-                            </button>
-                            <button class="btn btn-degradado">
-                                <a href="https://www.linkedin.com/in/antonio-david-fern%C3%A1ndez-de-gomar-9a8212331/" class="d-flex align-items-center text-decoration-none">
-                                    <img src="../Imagenes/linkedin.png"/>
-                                    
-                                </a>
-                            </button>
-                            <button class="btn btn-degradado">
-                                <a href="../PDF/CV_Antonio_David.pdf" class="d-flex align-items-center text-decoration-none">
-                                    <img src="../Imagenes/cv.png"/>
-                                </a>
-                            </button>
-                        </div>
+
+                    <div id="botones">
+                        <button class="btn btn-degradado">
+                            <a href="https://github.com/antoniodavid13" class="d-flex align-items-center text-decoration-none">
+                                <img src="/Imagenes/git.png" />
+                            </a>
+                        </button>
+                        <button class="btn btn-degradado">
+                            <a href="https://www.linkedin.com/in/antonio-david-fern%C3%A1ndez-de-gomar-9a8212331/" class="d-flex align-items-center text-decoration-none">
+                                <img src="/Imagenes/linkedin.png"/>
+                            </a>
+                        </button>
+                        <button class="btn btn-degradado">
+                            <a href="/PDF/CV_Antonio_David.pdf" class="d-flex align-items-center text-decoration-none">
+                                <img src="/Imagenes/cv.png"/>
+                            </a>
+                        </button>
+                    </div>
                 </div>
+
                 <div class ="col-sm-12 col-md-4 fs-lighter fs-5 text-justify ms-2">
-                    <a href="../Imagenes/logo.png">
-                    <img id="foto"src="../Imagenes/logo.png" alt="Foto de mí">
+                    <a href="/Imagenes/logo.png">
+                    <img id="foto" src="/Imagenes/logo.png" alt="Foto de mí">
                     </a>
                 </div>
                 
@@ -362,25 +364,21 @@
     </section>
     
 <footer>
-     <div data-include="../components/footer.html"></div>
+     <div data-include="/components/footer.html"></div>
 </footer>
     
 </main>
 
-
 <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
-<!-- Tu JS de EmailJS -->
-<script src="../js/email.js"></script>
 
-<!-- El resto de tus scripts -->
-<script src="../js/archivo.js"></script>
-<script src="../js/index.js"></script>
-<script src="../js/includes.js"></script>
-<script src="../js/validacion.js"></script>
+<script src="/js/email.js"></script>
+<script src="/js/archivo.js"></script>
+<script src="/js/index.js"></script>
+<script src="/js/includes.js"></script>
+<script src="/js/validacion.js"></script>
 
 <link href="https://cdn.jsdelivr.net/npm/@n8n/chat/dist/style.css" rel="stylesheet" />
-<script type="module" src="../js/chat.js"></script>
-
+<script type="module" src="/js/chat.js"></script>
 
 </body>
-</html> 
+</html>
