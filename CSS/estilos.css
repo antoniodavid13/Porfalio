@@ -1,7 +1,7 @@
 body {
   margin: 0;
     font-family: Arial, Helvetica, sans-serif;
-    background: linear-gradient(180deg, hwb(224 3% 77%) 0%, hsl(222, 47%, 21%) 50%, hsl(224, 95%, 26%) 100%);
+    background: linear-gradient(180deg, #08153b 0%, #1c2b4f 50%, #032581 100%);
     color: #EFFFFF;
     background-size: 1000% 1000%;
 }
@@ -10,7 +10,7 @@ body {
     min-height: 100vh;
     display: flex;
     align-items: center;
-    background: linear-gradient(135deg, #020617 0%, hwb(222 4% 73%) 40%, #1d4ed8 100%);
+    background: linear-gradient(135deg, #020617 0%, #0a1c45 40%, #1d4ed8 100%);
     background-size: 200% 200%;
     animation: moverGradiente 12s ease-in-out infinite;
 }
@@ -31,7 +31,7 @@ body {
 }
 
 #sobremibody {
-    background: rgba(15, 23, 42, 0.85);
+    background: #0f172ad9;
     border-radius: 32px;
     border: 1px solid rgba(34, 211, 238, 0.3);
     box-shadow: 0 18px 45px rgba(15, 23, 42, 0.8);
@@ -55,7 +55,7 @@ body {
     display: inline-block;
     border-radius: 40px;
     border: 2px solid #22d3ee;
-    background: radial-gradient(circle at top, #38bdf8 0%, hsl(229, 40%, 39%) 100%);
+    background: radial-gradient(circle at top, #38bdf8 0%, #3c4a8b 100%);
     padding: 16px;
 }
 #foto:hover{
@@ -83,7 +83,7 @@ body {
     font-weight: lighter;
     font-size:medium;
     backdrop-filter: blur(6px);
-    background-color: hsl(198, 67%, 38%);
+    background-color: #207ba2;
 }
 
 .btn-degradado2:hover {
