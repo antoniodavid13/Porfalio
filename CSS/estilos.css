@@ -219,6 +219,7 @@ body {
 div#proyectos {
     border: 2px solid #20D3D1;
     background: rgba(15, 23, 42, 0.9);
+    height: 450px;
 }
 
 /* Animación secciones */
